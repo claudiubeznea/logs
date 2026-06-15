@@ -1,1 +1,1150 @@
-test
+NOTICE:  BL2: v2.10.5(release):2.10.5/rz_soc_dev-377-gc83b91ff0657
+NOTICE:  BL2: Built : 15:37:47, Feb  4 2026
+NOTICE:  BL2: SYS_LSI_MODE: 0x3251
+NOTICE:  BL2: SYS_LSI_DEVID: 0x85e0447
+NOTICE:  BL2: Booting BL31
+NOTICE:  BL31: v2.10.5(release):2.10.5/rz_soc_dev-377-gc83b91ff0657
+NOTICE:  BL31: Built : 15:37:50, Feb  4 2026
+
+
+U-Boot 2021.10-00018-g30b672125d8c (Sep 17 2025 - 11:25:11 +0300)
+
+CPU:   Renesas Electronics CPU rev 1.0
+Model: smarc-rzg3s
+DRAM:  896 MiB
+MMC:   sd@11c00000: 0, sd@11c10000: 1, sd@11c20000: 2
+Loading Environment from MMC... OK
+In:    serial@1004b800
+Out:   serial@1004b800
+Err:   serial@1004b800
+Net:   eth0: ethernet@11c30000
+Hit any key to stop autoboot:  0 
+ethernet@11c30000 Waiting for PHY auto negotiation to complete.. done
+Using ethernet@11c30000 device
+TFTP from server 192.168.32.2; our IP address is 192.168.32.3
+Filename 'g3s/Image.gz'.
+Load address: 0x4b080000
+Loading: #################################################################
+         #################################################################
+         #################################################################
+         #################################################################
+         #################################################################
+         #################################################################
+         #################################################################
+         #################################################################
+         #################################################################
+         #################################################################
+         #################################################################
+         #################################################################
+         #################################################################
+         #################################################################
+         #################################################################
+         #################################################################
+         ####
+         2.5 MiB/s
+done
+Bytes transferred = 15322089 (e9cbe9 hex)
+Uncompressed size: 50924032 = 0x3090A00
+Using ethernet@11c30000 device
+TFTP from server 192.168.32.2; our IP address is 192.168.32.3
+Filename 'g3s/r9a08g045s33-smarc.dtb'.
+Load address: 0x48000000
+Loading: ###
+         9.8 MiB/s
+done
+Bytes transferred = 30733 (780d hex)
+Moving Image from 0x48080000 to 0x48200000, end=4b360000
+## Flattened Device Tree blob at 48000000
+   Booting using the fdt blob at 0x48000000
+   Loading Device Tree to 0000000057ff5000, end 0000000057fff80c ... OK
+
+Starting kernel ...
+
+[    0.000000] Booting Linux on physical CPU 0x0000000000 [0x412fd050]
+[    0.000000] Linux version 7.1.0-rc7-next-20260610-00001-gafe09f11d549-dirty (claudiu@claudiu-X670E-Pro-RS) (aarch64-none-linux-gnu-gcc (GNU Toolchain for the A-profile Architecture 10.3-2021.07 (arm-10.29)) 10.3.1 20210621, GNU ld (GNU Toolchain for the A-profile Architecture 10.3-2021.07 (arm-10.29)) 2.36.1.20210621) #102 SMP PREEMPT Mon Jun 15 12:17:32 EEST 2026
+[    0.000000] KASLR disabled due to lack of seed
+[    0.000000] Machine model: Renesas SMARC EVK version 2 based on r9a08g045s33
+[    0.000000] efi: UEFI not found.
+[    0.000000] OF: reserved mem: Reserved memory: No reserved-memory node in the DT
+[    0.000000] NUMA: Faking a node at [mem 0x0000000048000000-0x000000007fffffff]
+[    0.000000] NODE_DATA(0) allocated [mem 0x7fe16640-0x7fe18cff]
+[    0.000000] cma: Reserved 32 MiB at 0x000000007de00000
+[    0.000000] psci: probing for conduit method from DT.
+[    0.000000] psci: PSCIv1.1 detected in firmware.
+[    0.000000] psci: Using standard PSCI v0.2 function IDs
+[    0.000000] psci: MIGRATE_INFO_TYPE not supported.
+[    0.000000] psci: SMC Calling Convention v1.4
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x0000000048000000-0x000000007fffffff]
+[    0.000000]   DMA32    empty
+[    0.000000]   Normal   empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000048000000-0x000000007fffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000048000000-0x000000007fffffff]
+[    0.000000] percpu: Embedded 26 pages/cpu s67416 r8192 d30888 u106496
+[    0.000000] Detected VIPT I-cache on CPU0
+[    0.000000] CPU features: detected: GICv3 CPU interface
+[    0.000000] CPU features: detected: ARM errata 1165522, 1319367, or 1530923
+[    0.000000] alternatives: applying boot alternatives
+[    0.000000] Kernel command line: root=/dev/nfs rw ip=192.168.32.11:::::eth0 nfsroot=192.168.32.2:/srv/nfs/rootfs/g3s-pyrotux,nfsvers=3,tcp no_console_suspend 
+[    0.000000] printk: log buffer data + meta data: 131072 + 458752 = 589824 bytes
+[    0.000000] Dentry cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 65536 (order: 7, 524288 bytes, linear)
+[    0.000000] software IO TLB: SWIOTLB bounce buffer size adjusted to 0MB
+[    0.000000] software IO TLB: area num 1.
+[    0.000000] software IO TLB: mapped [mem 0x000000007cd66000-0x000000007ce66000] (1MB)
+[    0.000000] Fallback order for Node 0: 0 
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 229376
+[    0.000000] Policy zone: DMA
+[    0.000000] mem auto-init: stack:off, heap alloc:off, heap free:off
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000] rcu:     RCU event tracing is enabled.
+[    0.000000] rcu:     RCU restricting CPUs from NR_CPUS=512 to nr_cpu_ids=1.
+[    0.000000]  Trampoline variant of Tasks RCU enabled.
+[    0.000000]  Tracing variant of Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+[    0.000000] RCU Tasks: Setting shift to 0 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=1.
+[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000] GICv3: 480 SPIs implemented
+[    0.000000] GICv3: 0 Extended SPIs implemented
+[    0.000000] Root IRQ handler: gic_handle_irq
+[    0.000000] GICv3: GICv3 features: 16 PPIs
+[    0.000000] GICv3: GICD_CTLR.DS=0, SCR_EL3.FIQ=0
+[    0.000000] GICv3: CPU0: found redistributor 0 region 0:0x0000000012440000
+[    0.000000] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.000000] arch_timer: cp15 timer running at 24.00MHz (virt).
+[    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x588fe9dc0, max_idle_ns: 440795202592 ns
+[    0.000000] sched_clock: 56 bits at 24MHz, resolution 41ns, wraps every 4398046511097ns
+[    0.000502] Console: colour dummy device 80x25
+[    0.000522] printk: legacy console [tty0] enabled
+[    0.001143] Calibrating delay loop (skipped), value calculated using timer frequency.. 48.00 BogoMIPS (lpj=96000)
+[    0.001174] pid_max: default: 32768 minimum: 301
+[    0.001508] Mount-cache hash table entries: 2048 (order: 2, 16384 bytes, linear)
+[    0.001537] Mountpoint-cache hash table entries: 2048 (order: 2, 16384 bytes, linear)
+[    0.002018] VFS: Finished mounting rootfs on nullfs
+[    0.004737] rcu: Hierarchical SRCU implementation.
+[    0.004799] rcu:     Max phase no-delay instances is 1000.
+[    0.006758] EFI services will not be available.
+[    0.007096] smp: Bringing up secondary CPUs ...
+[    0.007157] smp: Brought up 1 node, 1 CPU
+[    0.007173] SMP: Total of 1 processors activated.
+[    0.007186] CPU: All CPU(s) started at EL1
+[    0.007240] CPU features: detected: 32-bit EL0 Support
+[    0.007254] CPU features: detected: 32-bit EL1 Support
+[    0.007271] CPU features: detected: Data cache clean to the PoU not required for I/D coherence
+[    0.007288] CPU features: detected: Common not Private translations
+[    0.007301] CPU features: detected: CRC32 instructions
+[    0.007330] CPU features: detected: RCpc load-acquire (LDAPR)
+[    0.007343] CPU features: detected: LSE atomic instructions
+[    0.007358] CPU features: detected: Privileged Access Never
+[    0.007371] CPU features: detected: PMUv3
+[    0.007383] CPU features: detected: RAS Extension Support
+[    0.007400] CPU features: detected: XNX
+[    0.007418] CPU features: detected: Speculative Store Bypassing Safe (SSBS)
+[    0.007504] alternatives: applying system-wide alternatives
+[    0.014411] Memory: 812404K/917504K available (17280K kernel code, 5250K rwdata, 14288K rodata, 12736K init, 696K bss, 69644K reserved, 32768K cma-reserved)
+[    0.015538] devtmpfs: initialized
+[    0.022544] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.022653] posixtimers hash table entries: 512 (order: 1, 8192 bytes, linear)
+[    0.022715] futex hash table entries: 256 (16384 bytes on 1 NUMA nodes, total 16 KiB, linear).
+[    0.023946] 20128 pages in range for non-PLT usage
+[    0.023983] 511648 pages in range for PLT usage
+[    0.028622] DMI: not present or invalid.
+[    0.032186] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.033495] DMA: preallocated 128 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+[    0.033743] audit: initializing netlink subsys (disabled)
+[    0.036782] thermal_sys: Registered thermal governor 'step_wise'
+[    0.036812] thermal_sys: Registered thermal governor 'power_allocator'
+[    0.037004] audit: type=2000 audit(0.028:1): state=initialized audit_enabled=0 res=1
+[    0.037085] cpuidle: using governor menu
+[    0.037491] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[    0.037580] ASID allocator initialised with 65536 entries
+[    0.043167] Serial: AMBA PL011 UART driver
+[    0.047963] /soc/pcie@11e40000: Fixed dependency cycle(s) with /soc/pcie@11e40000
+[    0.048048] /soc/interrupt-controller@12400000: Fixed dependency cycle(s) with /soc/interrupt-controller@12400000
+[    0.075180] /soc/pcie@11e40000: Fixed dependency cycle(s) with /soc/pcie@11e40000
+[    0.088241] HugeTLB: registered 1.00 GiB page size, pre-allocated 0 pages
+[    0.088304] HugeTLB: 0 KiB vmemmap can be freed for a 1.00 GiB page
+[    0.088320] HugeTLB: registered 32.0 MiB page size, pre-allocated 0 pages
+[    0.088335] HugeTLB: 0 KiB vmemmap can be freed for a 32.0 MiB page
+[    0.088349] HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.088362] HugeTLB: 0 KiB vmemmap can be freed for a 2.00 MiB page
+[    0.088377] HugeTLB: registered 64.0 KiB page size, pre-allocated 0 pages
+[    0.088389] HugeTLB: 0 KiB vmemmap can be freed for a 64.0 KiB page
+[    0.092158] ACPI: Interpreter disabled.
+[    0.098665] renesas-rz-sysc 11020000.system-controller: Detected Renesas RZ/G3S r9a08g045 Rev 0
+[    0.102345] iommu: Default domain type: Translated
+[    0.102403] iommu: DMA domain TLB invalidation policy: strict mode
+[    0.103036] SCSI subsystem initialized
+[    0.103847] usbcore: registered new interface driver usbfs
+[    0.103946] usbcore: registered new interface driver hub
+[    0.104002] usbcore: registered new device driver usb
+[    0.105720] pps_core: LinuxPPS API ver. 1 registered
+[    0.105758] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.105791] PTP clock support registered
+[    0.106071] EDAC MC: Ver: 3.0.0
+[    0.106938] scmi_core: SCMI protocol bus registered
+[    0.109787] FPGA manager framework
+[    0.111818] vgaarb: loaded
+[    0.112988] clocksource: Switched to clocksource arch_sys_counter
+[    0.113456] VFS: Disk quotas dquot_6.6.0
+[    0.113505] VFS: Dquot-cache hash table entries: 512 (4096 bytes)
+[    0.114181] pnp: PnP ACPI: disabled
+[    0.122426] NET: Registered PF_INET protocol family
+[    0.122753] IP idents hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    0.123860] tcp_listen_portaddr_hash hash table entries: 512 (order: 1, 8192 bytes, linear)
+[    0.123924] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    0.123954] TCP established hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.124042] TCP bind hash table entries: 8192 (order: 6, 262144 bytes, linear)
+[    0.124525] TCP: Hash tables configured (established 8192 bind 8192)
+[    0.124772] UDP hash table entries: 512 (order: 3, 32768 bytes, linear)
+[    0.125243] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    0.126137] RPC: Registered named UNIX socket transport module.
+[    0.126190] RPC: Registered udp transport module.
+[    0.126203] RPC: Registered tcp transport module.
+[    0.126215] RPC: Registered tcp-with-tls transport module.
+[    0.126227] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.126261] PCI: CLS 0 bytes, default 64
+[    0.126790] kvm [1]: HYP mode not available
+[    0.128300] Initialise system trusted keyrings
+[    0.128786] workingset: timestamp_bits=42 (anon: 37) max_order=18 bucket_order=0 (anon: 0)
+[    0.129550] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.130167] NFS: Registering the id_resolver key type
+[    0.130272] Key type id_resolver registered
+[    0.130286] Key type id_legacy registered
+[    0.130335] nfs4filelayout_init: NFSv4 File Layout Driver Registering...
+[    0.130354] nfs4flexfilelayout_init: NFSv4 Flexfile Layout Driver Registering...
+[    0.131132] Key type asymmetric registered
+[    0.131172] Asymmetric key parser 'x509' registered
+[    0.131273] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 243)
+[    0.131295] io scheduler mq-deadline registered
+[    0.131312] io scheduler kyber registered
+[    0.131403] io scheduler bfq registered
+[    0.157721] ledtrig-cpu: registered to indicate activity on CPUs
+[    0.283271] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+[    0.297186] msm_serial: driver initialized
+[    0.299361] SuperH (H)SCI(F) driver initialized
+[    0.300239] STM32 USART driver initialized
+[    0.322684] loop: module loaded
+[    0.328283] megasas: 07.734.00.00-rc1
+[    0.352209] tun: Universal TUN/TAP device driver, 1.6
+[    0.355375] VFIO - User Level meta-driver version: 0.3
+[    0.375574] usbcore: registered new interface driver usb-storage
+[    0.393598] i2c_dev: i2c /dev entries driver
+[    0.400729] i2c-riic 10090000.i2c: registered with 1000000Hz bus speed
+[    0.407687] i2c-riic 10090400.i2c: registered with 400000Hz bus speed
+[    0.479821] SMCCC: SOC_ID: ARCH_SOC_ID not implemented, skipping ....
+[    0.485995] usbcore: registered new interface driver usbhid
+[    0.486056] usbhid: USB HID core driver
+[    0.529259] NET: Registered PF_INET6 protocol family
+[    0.530845] Segment Routing with IPv6
+[    0.530948] In-situ OAM (IOAM) with IPv6
+[    0.531047] NET: Registered PF_PACKET protocol family
+[    0.531164] Key type dns_resolver registered
+[    0.579317] registered taskstats version 1
+[    0.579504] Loading compiled-in X.509 certificates
+[    0.590596] Demotion targets for Node 0: null
+[    0.600505] pinctrl-rzg2l 11030000.pinctrl: pinctrl-rzg2l support registered
+[    0.644033] rzg3s-pcie-host 11e40000.pcie: host bridge /soc/pcie@11e40000 ranges:
+[    0.644145] rzg3s-pcie-host 11e40000.pcie:      MEM 0x0030000000..0x0037ffffff -> 0x0030000000
+[    0.644183] rzg3s-pcie-host 11e40000.pcie:   IB MEM 0x0040000000..0x013fffffff -> 0x0040000000
+[    0.649927] 1004b800.serial: ttySC3 at MMIO 0x1004b800 (irq = 44, base_baud = 0) is a scif
+[    0.650086] printk: legacy console [ttySC3] enabled
+[    1.784032] 1004c400.serial: ttySC1 at MMIO 0x1004c400 (irq = 54, base_baud = 0) is a scif
+[    1.803168] ravb 11c30000.ethernet eth0: Base address at 0x11c30000, d2:7b:7f:8f:d8:52, IRQ 58.
+[    1.821871] ravb 11c40000.ethernet eth1: Base address at 0x11c40000, d2:7b:7f:8f:d8:52, IRQ 60.
+[    1.865116] rzg3s-pcie-host 11e40000.pcie: PCIe link status [0x100014e]
+[    1.884912] ehci-platform 11e30100.usb: EHCI Host Controller
+[    1.897126] ehci-platform 11e10100.usb: EHCI Host Controller
+[    1.903585] ohci-platform 11e10000.usb: Generic Platform OHCI controller
+[    1.917442] ehci-platform 11e30100.usb: new USB bus registered, assigned bus number 1
+[    1.929451] ehci-platform 11e10100.usb: new USB bus registered, assigned bus number 2
+[    1.943515] ohci-platform 11e30000.usb: Generic Platform OHCI controller
+[    1.951890] input: keys as /devices/platform/keys/input/input0
+[    1.957945] ohci-platform 11e10000.usb: new USB bus registered, assigned bus number 3
+[    1.969870] ehci-platform 11e30100.usb: irq 63, io mem 0x11e30100
+[    1.976112] ohci-platform 11e30000.usb: new USB bus registered, assigned bus number 4
+[    1.984075] ehci-platform 11e10100.usb: irq 62, io mem 0x11e10100
+[    1.990489] ohci-platform 11e10000.usb: irq 64, io mem 0x11e10000
+[    1.998800] ohci-platform 11e30000.usb: irq 65, io mem 0x11e30000
+[    2.005379] ehci-platform 11e30100.usb: USB 2.0 started, EHCI 1.10
+[    2.013126] hub 1-0:1.0: USB hub found
+[    2.017011] hub 1-0:1.0: 1 port detected
+[    2.020991] ehci-platform 11e10100.usb: USB 2.0 started, EHCI 1.10
+[    2.028908] hub 2-0:1.0: USB hub found
+[    2.032850] hub 2-0:1.0: 1 port detected
+[    2.040120] renesas_sdhi_internal_dmac 11c00000.mmc: mmc0 base at 0x0000000011c00000, max clock rate 125 MHz
+[    2.050199] renesas_sdhi_internal_dmac 11c10000.mmc: mmc1 base at 0x0000000011c10000, max clock rate 125 MHz
+[    2.069487] rzg3s-pcie-host 11e40000.pcie: PCI host bridge to bus 0000:00
+[    2.084359] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    2.100971] pci_bus 0000:00: root bus resource [mem 0x30000000-0x37ffffff]
+[    2.121104] pci 0000:00:00.0: [1912:0033] type 01 class 0x060400 PCIe Root Port
+[    2.144987] pci 0000:00:00.0: PCI bridge to [bus 01-ff]
+[    2.154094] hub 4-0:1.0: USB hub found
+[    2.158274] pci 0000:00:00.0:   bridge window [mem 0xfff00000-0xffffffff]
+[    2.165194] hub 4-0:1.0: 1 port detected
+[    2.170680] hub 3-0:1.0: USB hub found
+[    2.174783] pci 0000:00:00.0:   bridge window [mem 0x00000000-0x000fffff 64bit pref]
+[    2.182715] hub 3-0:1.0: 1 port detected
+[    2.187363] pci 0000:00:00.0: PME# supported from D0 D3hot
+[    2.195353] pci 0000:01:00.0: [1d79:2263] type 00 class 0x010802 PCIe Endpoint
+[    2.202786] pci_bus 0000:01: 2-byte config write to 0000:01:00.0 offset 0x4 may corrupt adjacent RW1C bits
+[    2.213038] pci 0000:01:00.0: BAR 0 [mem 0x00000000-0x00003fff 64bit]
+[    2.220340] pci 0000:01:00.0: 4.000 Gb/s available PCIe bandwidth, limited by 5.0 GT/s PCIe x1 link at 0000:00:00.0 (capable of 15.752 Gb/s with 8.0 GT/s PCIe x2 link)
+[    2.236387] pci 0000:00:00.0: bridge window [mem 0x30000000-0x300fffff]: assigned
+[    2.244043] pci 0000:01:00.0: BAR 0 [mem 0x30000000-0x30003fff 64bit]: assigned
+[    2.251436] pci 0000:00:00.0: PCI bridge to [bus 01-ff]
+[    2.256719] pci 0000:00:00.0:   bridge window [mem 0x30000000-0x300fffff]
+[    2.263564] pci_bus 0000:00: resource 4 [mem 0x30000000-0x37ffffff]
+[    2.269844] pci_bus 0000:01: resource 1 [mem 0x30000000-0x300fffff]
+[    2.276302] pcieport 0000:00:00.0: enabling device (0000 -> 0002)
+[    2.289111] usb 1-1: new high-speed USB device number 2 using ehci-platform
+[    2.298423] mmc0: new HS200 MMC card at address 0001
+[    2.304400] mmcblk0: mmc0:0001 G1M15M 59.3 GiB
+[    2.311927]  mmcblk0: p1
+[    2.315356] mmcblk0boot0: mmc0:0001 G1M15M 31.5 MiB
+[    2.324030] mmcblk0boot1: mmc0:0001 G1M15M 31.5 MiB
+[    2.332535] mmcblk0rpmb: mmc0:0001 G1M15M 4.00 MiB, chardev (510:0)
+[    2.353258] Microchip KSZ9131 Gigabit PHY 11c30000.ethernet-ffffffff:07: attached PHY driver (mii_bus:phy_addr=11c30000.ethernet-ffffffff:07, irq=59)
+[    2.446980] hub 1-1:1.0: USB hub found
+[    2.451038] hub 1-1:1.0: 4 ports detected
+[    2.581709] mmc1: new UHS-I speed SDR104 SDXC card at address 59b4
+[    2.589915] mmcblk1: mmc1:59b4 SDU1 116 GiB
+[    2.597764]  mmcblk1: p1
+[    2.749121] usb 1-1.3: new full-speed USB device number 3 using ehci-platform
+[    5.763380] ravb 11c30000.ethernet eth0: Link is Up - 1Gbps/Full - flow control off
+[    5.785109] IP-Config: Guessing netmask 255.255.255.0
+[    5.790271] IP-Config: Complete:
+[    5.793581]      device=eth0, hwaddr=d2:7b:7f:8f:d8:52, ipaddr=192.168.32.11, mask=255.255.255.0, gw=255.255.255.255
+[    5.804271]      host=192.168.32.11, domain=, nis-domain=(none)
+[    5.810213]      bootserver=255.255.255.255, rootserver=192.168.32.2, rootpath=
+[    5.810662] clk: Disabling unused clocks
+[    5.822231] PM: genpd: Disabling unused power domains
+[    6.879239] VFS: Mounted root (nfs filesystem) on device 0:23.
+[    6.885898] devtmpfs: mounted
+[    6.889336] VFS: Pivoted into new rootfs
+[    6.909284] Freeing unused kernel memory: 12736K
+[    6.914359] Run /sbin/init as init process
+[    7.309892] systemd[1]: System time before build time, advancing clock.
+[    7.435272] systemd[1]: systemd 255.21^ running in system mode (-PAM -AUDIT -SELINUX -APPARMOR +IMA -SMACK +SECCOMP -GCRYPT -GNUTLS -OPENSSL +ACL +BLKID -CURL -ELFUTILS -FIDO2 -IDN2 -IDN -IPTC +KMOD -LIBCRYPTSETUP +LIBFDISK -PCRE2 -PWQUALITY -P11KIT -QRENCODE -TPM2 -BZIP2 -LZ4 -XZ -ZLIB +ZSTD -BPF_FRAMEWORK +XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified)
+[    7.470119] systemd[1]: Detected architecture arm64.
+
+Welcome to Poky (Yocto Project Reference Distro) 5.0.17 (scarthgap)!
+
+[    7.499025] systemd[1]: Hostname set to <smarc-rzg3s>.
+[    8.700232] systemd[1]: Queued start job for default target Multi-User System.
+[    8.744031] systemd[1]: Created slice Slice /system/getty.
+[  OK  ] Created slice Slice /system/getty.
+[    8.763847] systemd[1]: Created slice Slice /system/modprobe.
+[  OK  ] Created slice Slice /system/modprobe.
+[    8.783908] systemd[1]: Created slice Slice /system/serial-getty.
+[  OK  ] Created slice Slice /system/serial-getty.
+[    8.803259] systemd[1]: Created slice User and Session Slice.
+[  OK  ] Created slice User and Session Slice.
+[    8.821823] systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+[  OK  ] Started Dispatch Password Requests to Console Directory Watch.
+[    8.845733] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[  OK  ] Started Forward Password Requests to Wall Directory Watch.
+[    8.865539] systemd[1]: Reached target Host and Network Name Lookups.
+[  OK  ] Reached target Host and Network Name Lookups.
+[    8.885365] systemd[1]: Reached target Path Units.
+[  OK  ] Reached target Path Units.
+[    8.901371] systemd[1]: Reached target Remote File Systems.
+[  OK  ] Reached target Remote File Systems.
+[    8.917394] systemd[1]: Reached target Slice Units.
+[  OK  ] Reached target Slice Units.
+[    8.933389] systemd[1]: Reached target Swaps.
+[  OK  ] Reached target Swaps.
+[    8.976705] systemd[1]: Listening on RPCbind Server Activation Socket.
+[  OK  ] Listening on RPCbind Server Activation Socket.
+[    8.997533] systemd[1]: Reached target RPC Port Mapper.
+[  OK  ] Reached target RPC Port Mapper.
+[    9.016594] systemd[1]: syslog.socket: SO_PASSSEC failed: Operation not supported
+[    9.024462] systemd[1]: Listening on Syslog Socket.
+[  OK  ] Listening on Syslog Socket.
+[    9.042114] systemd[1]: Listening on initctl Compatibility Named Pipe.
+[  OK  ] Listening on initctl Compatibility Named Pipe.
+[    9.064014] systemd[1]: Listening on Journal Audit Socket.
+[  OK  ] Listening on Journal Audit Socket.
+[    9.082190] systemd[1]: systemd-journald-dev-log.socket: SO_PASSSEC failed: Operation not supported
+[    9.091720] systemd[1]: Listening on Journal Socket (/dev/log).
+[  OK  ] Listening on Journal Socket (/dev/log).
+[    9.110338] systemd[1]: systemd-journald.socket: SO_PASSSEC failed: Operation not supported
+[    9.119116] systemd[1]: systemd-journald.socket: SO_PASSSEC failed: Operation not supported
+[    9.127652] systemd[1]: Listening on Journal Socket.
+[  OK  ] Listening on Journal Socket.
+[    9.147368] systemd[1]: Listening on Network Service Netlink Socket.
+[  OK  ] Listening on Network Service Netlink Socket.
+[    9.168842] systemd[1]: Listening on udev Control Socket.
+[  OK  ] Listening on udev Control Socket.
+[    9.186341] systemd[1]: Listening on udev Kernel Socket.
+[  OK  ] Listening on udev Kernel Socket.
+[    9.203156] systemd[1]: Listening on User Database Manager Socket.
+[  OK  ] Listening on User Database Manager Socket.
+[    9.231702] systemd[1]: Mounting Huge Pages File System...
+         Mounting Huge Pages File System...
+[    9.273140] systemd[1]: Mounting POSIX Message Queue File System...
+         Mounting POSIX Message Queue File System...
+[    9.324377] systemd[1]: Mounting Kernel Debug File System...
+         Mounting Kernel Debug File System...
+[    9.362627] systemd[1]: Kernel Trace File System was skipped because of an unmet condition check (ConditionPathExists=/sys/kernel/tracing).
+[    9.451771] systemd[1]: Mounting Temporary Directory /tmp...
+         Mounting Temporary Directory /tmp...
+[    9.521564] systemd[1]: Starting Create List of Static Device Nodes...
+         Starting Create List of Static Device Nodes...
+[    9.586238] systemd[1]: Starting Load Kernel Module configfs...
+         Starting Load Kernel Module configfs...
+[    9.649866] systemd[1]: Starting Load Kernel Module drm...
+         Starting Load Kernel Module drm...
+[    9.743528] systemd[1]: Starting Load Kernel Module fuse...
+         Starting Load Kernel Module fuse...
+[    9.832877] systemd[1]: Starting Start psplash boot splash screen...
+         Starting Start psplash boot splash screen...
+[    9.965694] systemd[1]: Starting RPC Bind...
+         Starting RPC Bind...
+[   10.082288] systemd[1]: File System Check on Root Device was skipped because of an unmet condition check (ConditionPathIsReadWrite=!/).
+[   10.292598] fuse: init (API version 7.45)
+[   10.331258] systemd[1]: Starting Journal Service...
+         Starting Journal Service...
+[   10.379060] systemd[1]: Load Kernel Modules was skipped because no trigger condition checks were met.
+[   10.472378] systemd[1]: Starting Generate network units from Kernel command line...
+         Starting Generate network units from Kernel command line...
+[   10.586806] systemd[1]: Starting Remount Root and Kernel File Systems...
+         Starting Remount Root and Kernel File Systems...
+[   10.674593] systemd[1]: Starting Apply Kernel Variables...
+         Starting Apply Kernel Variables...
+[   10.830485] systemd[1]: Starting Coldplug All udev Devices...
+[   10.843288] systemd-journald[111]: Collecting audit messages is enabled.
+         Starting Coldplug All udev Devices...
+[   10.959897] systemd[1]: Started RPC Bind.
+[  OK  ] Started RPC Bind.
+[   11.010880] systemd[1]: Mounted Huge Pages File System.
+[  OK  ] Mounted Huge Pages File System.
+[   11.083783] systemd[1]: Mounted POSIX Message Queue File System.
+[  OK  ] Mounted POSIX Message Queue File System.
+[   11.158211] systemd[1]: Mounted Kernel Debug File System.
+[  OK  ] Mounted Kernel Debug File System.
+[   11.214388] systemd[1]: Started Journal Service.
+[  OK  ] Started Journal Service.
+[  OK  ] Mounted Temporary Directory /tmp.
+[  OK  ] Finished Create List of Static Device Nodes.
+[  OK  ] Finished Load Kernel Module configfs.
+[  OK  ] Finished Load Kernel Module drm.
+[  OK  ] Finished Load Kernel Module fuse.
+[FAILED] Failed to start Start psplash boot splash screen.
+See 'systemctl status psplash-start.service' for details.
+[DEPEND] Dependency failed for Start psplas…temd progress communication helper.
+[FAILED] Failed to start Generate network units from Kernel command line.
+See 'systemctl status systemd-network-generator.service' for details.
+[  OK  ] Finished Remount Root and Kernel File Systems.
+[  OK  ] Finished Apply Kernel Variables.
+         Mounting FUSE Control File System...
+         Mounting Kernel Configuration File System...
+         Starting Flush Journal to Persistent Storage...
+         Starting Create Static Device Nodes in /dev gracefully...
+[  OK  ] Mounted FUSE Control File System.
+[  OK  ] Mounted Kernel Configuration File System.
+[   12.349994] systemd-journald[111]: Received client request to flush runtime journal.
+[  OK  ] Finished Flush Journal to Persistent Storage.
+[   12.609073] audit: type=1334 audit(1748544507.292:2): prog-id=6 op=LOAD
+[   12.630279] audit: type=1334 audit(1748544507.308:3): prog-id=7 op=LOAD
+         Starting    12.650842] audit: type=1334 audit(1748544507.308:4): prog-id=8 op=LOAD
+39mUser Database Manager...
+[  OK  ] Started User Database Manager.
+[  OK  ] Finished Create Static Device Nodes in /dev gracefully.
+         Starting Create Static Device Nodes in /dev...
+[  OK  ] Finished Create Static Device Nodes in /dev.
+[  OK  ] Reached target Preparation for Local File Systems.
+         Mounting /var/volatile...
+[   14.021216] audit: type=1334 audit(1748544508.700:5): prog-id=9 op=LOAD
+[   14.039972] audit: type=1334 audit(1748544508.716:6): prog-id=10 op=LOAD
+         Starting Rule-based Manager for Device Events and Files...
+[  OK  ] Mounted /var/volatile.
+         Starting Load/Save OS Random Seed...
+[  OK  ] Reached target Local File Systems.
+         Starting Create System Files and Directories...
+[   15.309163] random: crng init done
+[  OK  ] Started Rule-based Manager for Device Events and Files.
+[  OK  ] Finished Load/Save OS Random Seed.
+[   15.849357] rzg2l-cpg 11010000.clock-controller: sync_state() pending due to 1005c000.clock-controller
+[   15.877854] rzg2l-cpg 11010000.clock-controller: sync_state() pending due to 10059000.thermal
+[   15.910768] rzg2l-cpg 11010000.clock-controller: sync_state() pending due to 10058000.adc
+[   15.946590] rzg2l-cpg 11010000.clock-controller: sync_state() pending due to 1004ec00.rtc
+[   15.979574] rzg2l-cpg 11010000.clock-controller: sync_state() pending due to 11e20000.usb
+[  OK  ] Finished Create System Files and Directories.
+[   16.179880] audit: type=1334 audit(1748544510.864:7): prog-id=11 op=LOAD
+[   16.314834] audit: type=1334 audit(1748544511.000:8): prog-id=11 op=UNLOAD
+[FAILED] Failed to start Network Time Synchronization.
+See 'systemctl status systemd-timesyncd.service' for details.
+[  OK  ] Reached target System Time Set.
+         Starting Record System Boot/Shutdown in UTMP...
+[   16.433166] audit: type=1334 audit(1748544511.116:9): prog-id=12 op=LOAD
+[FAILED[   16.602650] audit: type=1334 audit(1748544511.288:10): prog-id=12 op=UNLOAD
+] Failed to start Network Time Synchronization.
+See 'systemctl status systemd-timesyncd.service' for details.
+[   16.668572] audit: type=1334 audit(1748544511.352:11): prog-id=13 op=LOAD
+[FAILED] Failed to start Network Time Synchronization.
+See 'systemctl status systemd-timesyncd.service' for details.
+[  OK  ] Finished Record System Boot/Shutdown in UTMP.
+[FAILED] Failed to start Network Time Synchronization.
+See 'systemctl status systemd-timesyncd.service' for details.
+[FAILED] Failed to start Network Time Synchronization.
+See 'systemctl status systemd-timesyncd.service' for details.
+[FAILED] Failed to start Network Time Synchronization.
+See 'systemctl status systemd-timesyncd.service' for details.
+[  OK  ] Finished Coldplug All udev Devices.
+[  OK  ] Reached target System Initialization.
+[  OK  ] Started Daily Cleanup of Temporary Directories.
+[  OK  ] Reached target Timer Units.
+[  OK  ] Listening on Avahi mDNS/DNS-SD Stack Activation Socket.
+[  OK  ] Listening on D-Bus System Message Bus Socket.
+         Starting sshd.socket...
+[  OK  ] Listening on sshd.socket.
+[  OK  ] Reached target Socket Units.
+[  OK  ] Reached target Basic System.
+[  OK  ] Started Kernel Logging Service.
+[  OK  ] Started System Logging Service.
+         Starting D-Bus System Message Bus...
+[  OK  ] Started Getty on tty1.
+         Starting IPv6 Packet Filtering Framework...
+         Starting IPv4 Packet Filtering Framework...
+         Starting Telephony service...
+[  OK  ] Started Serial Getty on ttySC3.
+[  OK  ] Reached target Login Prompts.
+[   19.063182] kauditd_printk_skb: 5 callbacks suppressed
+[   19.063207] audit: type=1334 audit(1748544513.748:17): prog-id=16 op=LOAD
+[   19.113961] audit: type=1334 audit(1748544513.784:18): prog-id=17 op=LOAD
+[   19.154485] audit: type=1334 audit(1748544513.784:19): prog-id=18 op=LOAD
+[FAILED] Failed to start User Login Management.
+[   19.378967] audit: type=1334 audit(1748544514.064:20): prog-id=16 op=UNLOAD
+See 'systemctl status systemd-logind.service' for details.
+         Starting OpenSSH Key Generation...
+[  OK  ] Started D-Bus System Message Bus.
+[  OK  ] Finished IPv6 Packet Filtering Framework.
+[  OK  ] Finished IPv4 Packet Filtering Framework.
+[  OK  ] Reached target Preparation for Network.
+         Starting Connection service...
+         Starting Load Kernel Module drm...
+[   20.097999] audit: type=1334 audit(1748544514.784:21): prog-id=19 op=LOAD
+         Starting Network Configuration...
+[   20.338118] Bluetooth: Core ver 2.22
+[  OK  ] Started Telephony service.
+[   20.357327] NET: Registered PF_BLUETOOTH protocol family
+[   20.385656] Bluetooth: HCI device and connection manager initialized
+[   20.414195] Bluetooth: HCI socket layer initialized
+[   20.434890] Bluetooth: L2CAP socket layer initialized
+[   20.466202] Bluetooth: SCO socket layer initialized
+[  OK  ] Finished Load Kernel Module drm.
+[   21.019739] audit: type=1334 audit(1748544515.700:22): prog-id=20 op=LOAD
+[   21.064043] audit: type=1334 audit(1748544515.720:23): prog-id=21 op=LOAD
+[   21.106855] audit: type=1334 audit(1748544515.720:24): prog-id=22 op=LOAD
+[   21.143308] audit: type=1334 audit(1748544515.720:25): prog-id=17 op=UNLOAD
+[FAILED[   21.185902] audit: type=1334 audit(1748544515.720:26): prog-id=18 op=UNLOAD
+] Failed to start User Login Management.
+See 'systemctl status systemd-logind.service' for details.
+[  OK  ] Finished OpenSSH Key Generation.
+         Starting Load Kernel Module drm...
+[  OK  ] Started Connection service.
+         Starting Avahi mDNS/DNS-SD Stack...
+[  OK  ] Finished Load Kernel Module drm.
+[   22.059312] Microchip KSZ9131 Gigabit PHY 11c40000.ethernet-ffffffff:07: attached PHY driver (mii_bus:phy_addr=11c40000.ethernet-ffffffff:07, irq=61)
+[FAILED] Failed to start Hostname Service.
+See 'systemctl status systemd-hostnamed.service' for details.
+[FAILED] Failed to start User Login Management.
+See 'systemctl status systemd-logind.service' for details.
+         Starting WPA supplicant...
+[   22.664696] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[   22.787563] Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[   22.794258] Loaded X.509 cert 'wens: 61c038651aabdcf94bd0ac7ff06c7248db18c600'
+         Starting Load Kernel Module drm...
+[  OK  ] Started Avahi mDNS/DNS-SD Stack.
+[  OK  ] Started Network Configuration.
+[  OK  ] Finished Load Kernel Module drm.
+[FAILED] Failed to start User Login Management.
+See 'systemctl status systemd-logind.service' for details.
+[  OK  ] Reached target Multi-User System.
+         Starting Record Runlevel Change in UTMP...
+[  OK  ] Started WPA supplicant.
+[  OK  ] Reached target Network.
+         Starting Load Kernel Module drm...
+[   24.066416] kauditd_printk_skb: 20 callbacks suppressed
+[   24.066440] audit: type=1334 audit(1748544518.752:47): prog-id=30 op=UNLOAD
+[   24.097335] audit: type=1334 audit(1748544518.768:48): prog-id=31 op=UNLOAD
+[   24.217402] audit: type=1334 audit(1748544518.904:49): prog-id=32 op=UNLOAD
+
+Poky (Yocto Project Reference Distro) 5.0.17 smarc-rzg3s ttySC3
+
+smarc-rzg3s login: [   25.279143] ravb 11c30000.ethernet end0: renamed from eth0 (while UP)
+[   25.381787] ravb 11c40000.ethernet end1: renamed from eth1 (while UP)
+[   25.519384] mmc0: tuning execution failed: -5
+
+smarc-rzg3s login: root
+
+WARNING: Poky is a reference Yocto Project distribution that should be used for
+testing and development purposes only. It is recommended that you create your
+own distribution for production use.
+
+root@smarc-rzg3s:~# [   29.525328] rtc-rtca3 1004ec00.rtc: registered as rtc0
+[   29.534579] rtc-rtca3 1004ec00.rtc: hctosys: unable to read the hardware clock
+[   29.917937] renesas_usbhs 11e20000.usb: host probed
+[   29.929220] renesas_usbhs 11e20000.usb: no transceiver found
+[   29.959869] renesas_usbhs 11e20000.usb: gadget probed
+[   30.012673] renesas_usbhs 11e20000.usb: probed
+[   30.967042] nvme nvme0: pci function 0000:01:00.0
+[   30.976232] nvme 0000:01:00.0: enabling device (0000 -> 0002)
+[   30.999816] nvme nvme0: missing or invalid SUBNQN field.
+[   31.016810] nvme nvme0: passthrough uses implicit buffer lengths
+[   31.056123] nvme nvme0: 1/0/0 default/read/poll queues
+[   31.093256]  nvme0n1: p1
+[   31.465575] usbcore: registered new interface driver btusb
+[   31.477933] Bluetooth: hci0: Bootloader revision 0.3 build 0 week 24 2017
+[   31.485984] Bluetooth: hci0: Device revision is 1
+[   31.490798] Bluetooth: hci0: Secure boot is enabled
+[   31.495694] Bluetooth: hci0: OTP lock is enabled
+[   31.500323] Bluetooth: hci0: API lock is enabled
+[   31.504939] Bluetooth: hci0: Debug lock is disabled
+[   31.509826] Bluetooth: hci0: Minimum firmware build 1 week 10 2014
+[   31.523112] Bluetooth: hci0: Failed to load Intel firmware file intel/ibt-20-1-3.sfi (-2)
+[   31.533068] Bluetooth: hci0: Reading supported features failed (-56)
+[   31.539560] Bluetooth: hci0: Error reading debug features
+[   31.545195] Bluetooth: hci0: HCI LE Coded PHY feature bit is set, but its usage is not supported.
+
+root@smarc-rzg3s:~# uname -r
+7.1.0-rc7-next-20260610-00001-gafe09f11d549-dirty
+root@smarc-rzg3s:~# 
+root@smarc-rzg3s:~# 
+root@smarc-rzg3s:~# 
+root@smarc-rzg3s:~# cd /lava-testing/
+root@smarc-rzg3s:/lava-testing# 
+root@smarc-rzg3s:/lava-testing# 
+root@smarc-rzg3s:/lava-testing# ./py/run_pytests.sh --tb=short --color=no -v --log-cli-level=DEBUG --stress /lava-testing/py/tests/test_usb.py::test_stress_usb_rebind_004
+========================================================================================== test session starts ==========================================================================================
+platform linux -- Python 3.12.12, pytest-8.0.2, pluggy-1.4.0 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /lava-testing/py
+configfile: pytest.ini
+collected 1 item                                                                                                                                                                                        
+
+tests/test_usb.py::test_stress_usb_rebind_004[device_labels0-driver_names0-11e20000.usb] Manual action required:
+ Please make sure you have a USB flash drive connected! Continue? [y/n] [   86.181147] usb 1-1.2: new high-speed USB device number 4 using ehci-platform
+[   86.314236] usb-storage 1-1.2:1.0: USB Mass Storage device detected
+[   86.332676] scsi host0: usb-storage 1-1.2:1.0
+[   87.371719] scsi 0:0:0:0: Direct-Access     SanDisk  Cruzer Blade     1.00 PQ: 0 ANSI: 6
+[   87.400686] sd 0:0:0:0: [sda] 31260672 512-byte logical blocks: (16.0 GB/14.9 GiB)
+[   87.421175] sd 0:0:0:0: [sda] Write Protect is off
+[   87.431105] sd 0:0:0:0: [sda] Write cache: disabled, read cache: enabled, doesn't support DPO or FUA
+[   87.472083]  sda: sda1
+[   87.476220] sd 0:0:0:0: [sda] Attached SCSI removable disk
+y
+
+--------------------------------------------------------------------------------------------- live log call ---------------------------------------------------------------------------------------------
+INFO     test_usb:test_usb.py:158 Trying /dev/sda
+[   91.612343]  sda: sda1
+[  106.014599] EXT4-fs (sda1): mounted filesystem 058b0ceb-e117-4597-8247-676aa65f3d28 r/w with ordered data mode. Quota mode: none.
+INFO     test_usb:test_usb.py:167 Device /dev/sda OK
+[  107.953538] EXT4-fs (sda1): unmounting filesystem 058b0ceb-e117-4597-8247-676aa65f3d28.
+Manual action required:
+ Please make sure you have no flash drive connected to the board! Continue? [y/n] [  110.799086] usb 1-1.2: USB disconnect, device number 4
+y
+Manual action required:
+ Please plug in a USB flash drive! Continue? [y/n] [  114.085150] usb 1-1.2: new high-speed USB device number 5 using ehci-platform
+[  114.217909] usb-storage 1-1.2:1.0: USB Mass Storage device detected
+[  114.232582] scsi host0: usb-storage 1-1.2:1.0
+[  115.275517] scsi 0:0:0:0: Direct-Access     SanDisk  Cruzer Blade     1.00 PQ: 0 ANSI: 6
+[  115.302760] sd 0:0:0:0: [sda] 31260672 512-byte logical blocks: (16.0 GB/14.9 GiB)
+[  115.322742] sd 0:0:0:0: [sda] Write Protect is off
+[  115.333567] sd 0:0:0:0: [sda] Write cache: disabled, read cache: enabled, doesn't support DPO or FUA
+[  115.376078]  sda: sda1
+[  115.380096] sd 0:0:0:0: [sda] Attached SCSI removable disk
+y
+Manual action required:
+ Please unplug the USB flash drive! Continue? [y/n] [  117.199084] usb 1-1.2: USB disconnect, device number 5
+y
+[  118.206975] configfs-gadget.g1 gadget.0: HOST MAC 16:56:29:bd:9d:c1
+[  118.233794] configfs-gadget.g1 gadget.0: MAC 22:75:9f:bc:3e:1f
+Manual action required:
+ Please connect a USB Type-A connector b/w PC and DUT and run 'ifconfig <gadget-if> 192.168.0.2 on PC! Continue? [y/n] y
+INFO     test_usb:test_usb.py:517 Unbind/bind the device 11e00000.usbphy-ctrl from driver rzg2l_usbphy_ctrl for 300 time(s)
+[  141.991619] ohci-platform 11e10000.usb: remove, state 4
+[  142.005218] usb usb3: USB disconnect, device number 1
+[  142.025630] ohci-platform 11e10000.usb: USB bus 3 deregistered
+[  142.042422] ohci-platform 11e30000.usb: remove, state 4
+[  142.061340] usb usb4: USB disconnect, device number 1
+[  142.077812] ohci-platform 11e30000.usb: USB bus 4 deregistered
+[  142.094829] ehci-platform 11e10100.usb: remove, state 4
+[  142.109425] usb usb2: USB disconnect, device number 1
+[  142.126776] ehci-platform 11e10100.usb: USB bus 2 deregistered
+[  142.145574] ehci-platform 11e30100.usb: remove, state 1
+[  142.157489] usb usb1: USB disconnect, device number 1
+[  142.172224] usb 1-1: USB disconnect, device number 2
+[  142.186145] usb 1-1.3: USB disconnect, device number 3
+[  142.234979] ehci-platform 11e30100.usb: USB bus 1 deregistered
+[  142.266324] ------------[ cut here ]------------
+[  142.270977] WARNING: drivers/regulator/core.c:2657 at _regulator_put.part.0+0x40/0x48, CPU#0: python3/256
+[  142.280536] Modules linked in: usb_f_ecm u_ether libcomposite btusb btrtl btintel btbcm btmtk nvme nvme_core snd_soc_simple_card snd_soc_da7213 snd_soc_simple_card_utils snd_soc_core snd_compress snd_pcm_dmaengine snd_pcm snd_timer snd renesas_usbhs soundcore rzg3s_thermal clk_vbattb rzg2l_adc rtc_renesas_rtca3 industrialio_adc cfg80211 bluetooth ecdh_generic kpp ecc rfkill fuse drm backlight
+[  142.315309] CPU: 0 UID: 0 PID: 256 Comm: python3 Not tainted 7.1.0-rc7-next-20260610-00001-gafe09f11d549-dirty #102 PREEMPT 
+[  142.326490] Hardware name: Renesas SMARC EVK version 2 based on r9a08g045s33 (DT)
+[  142.333945] pstate: 80400005 (Nzcv daif +PAN -UAO -TCO -DIT -SSBS BTYPE=--)
+[  142.340883] pc : _regulator_put.part.0+0x40/0x48
+[  142.345486] lr : regulator_put+0x38/0x50
+[  142.349396] sp : ffff8000839fba90
+[  142.352698] x29: ffff8000839fba90 x28: ffff00000c86c000 x27: 0000000000000000
+[  142.359817] x26: 0000000000000000 x25: 0000000000000000 x24: ffff00000b606810
+[  142.366935] x23: 0000000000000013 x22: ffff8000839fbb38 x21: ffff00000b606810
+[  142.374054] x20: ffff8000830fdeb8 x19: ffff00000c6ec240 x18: 0000000000000020
+[  142.381171] x17: 2e7465676461672f x16: 6273752e30303030 x15: 65723d315f454c42
+[  142.388289] x14: 0000000000000003 x13: 0000000000000000 x12: 0000000000000000
+[  142.395407] x11: 0000000000000000 x10: ffff800081838810 x9 : 0000000000000000
+[  142.402524] x8 : 0101010101010101 x7 : 7f7f7f7f7f7f7f7f x6 : ffff00000c86c000
+[  142.409642] x5 : 000000000000003c x4 : ffff8000839fba80 x3 : ffff00000b40b400
+[  142.416759] x2 : ffff00000c86c000 x1 : 0000000000000001 x0 : ffff00000c6ec240
+[  142.423878] Call trace:
+[  142.426316]  _regulator_put.part.0+0x40/0x48 (P)
+[  142.430922]  regulator_put+0x38/0x50
+[  142.434487]  devm_regulator_release+0x14/0x20
+[  142.438836]  dr_node_release+0x1c/0x28
+[  142.442585]  devres_release_all+0xa0/0x108
+[  142.446670]  device_unbind_cleanup+0x2c/0x84
+[  142.450928]  device_release_driver_internal+0x1e8/0x224
+[  142.456139]  device_links_unbind_consumers+0xd4/0xfc
+[  142.461088]  device_release_driver_internal+0xe0/0x224
+[  142.466210]  device_driver_detach+0x18/0x24
+[  142.470382]  unbind_store+0xb4/0xb8
+[  142.473862]  drv_attr_store+0x24/0x38
+[  142.477513]  sysfs_kf_write+0x7c/0x94
+[  142.481172]  kernfs_fop_write_iter+0x128/0x1b8
+[  142.485604]  vfs_write+0x2ac/0x350
+[  142.489002]  ksys_write+0x68/0xfc
+[  142.492310]  __arm64_sys_write+0x1c/0x28
+[  142.496222]  invoke_syscall+0x54/0x110
+[  142.499969]  el0_svc_common.constprop.0+0xc0/0xe0
+[  142.504661]  do_el0_svc+0x1c/0x28
+[  142.507969]  el0_svc+0x30/0x198
+[  142.511109]  el0t_64_sync_handler+0xa0/0xe4
+[  142.515283]  el0t_64_sync+0x198/0x19c
+[  142.518939] ---[ end trace 0000000000000000 ]---
+[  144.447090] renesas_usbhs 11e20000.usb: host probed
+[  144.460270] renesas_usbhs 11e20000.usb: no transceiver found
+[  144.477673] renesas_usbhs 11e20000.usb: gadget probed
+[  144.492205] renesas_usbhs 11e20000.usb: probed
+[  144.565745] ------------[ cut here ]------------
+[  144.570397] WARNING: drivers/regulator/core.c:2657 at _regulator_put.part.0+0x40/0x48, CPU#0: python3/256
+[  144.579951] Modules linked in: usb_f_ecm u_ether libcomposite btusb btrtl btintel btbcm btmtk nvme nvme_core snd_soc_simple_card snd_soc_da7213 snd_soc_simple_card_utils snd_soc_core snd_compress snd_pcm_dmaengine snd_pcm snd_timer snd renesas_usbhs soundcore rzg3s_thermal clk_vbattb rzg2l_adc rtc_renesas_rtca3 industrialio_adc cfg80211 bluetooth ecdh_generic kpp ecc rfkill fuse drm backlight
+[  144.614727] CPU: 0 UID: 0 PID: 256 Comm: python3 Tainted: G        W           7.1.0-rc7-next-20260610-00001-gafe09f11d549-dirty #102 PREEMPT 
+[  144.627465] Tainted: [W]=WARN
+[  144.630421] Hardware name: Renesas SMARC EVK version 2 based on r9a08g045s33 (DT)
+[  144.637875] pstate: 80400005 (Nzcv daif +PAN -UAO -TCO -DIT -SSBS BTYPE=--)
+[  144.644813] pc : _regulator_put.part.0+0x40/0x48
+[  144.649415] lr : regulator_put+0x38/0x50
+[  144.653325] sp : ffff8000839fba90
+[  144.656625] x29: ffff8000839fba90 x28: ffff00000c86c000 x27: 0000000000000000
+[  144.663744] x26: 0000000000000000 x25: 0000000000000000 x24: ffff00000b606810
+[  144.670862] x23: 0000000000000013 x22: ffff8000839fbb38 x21: ffff00000b606810
+[  144.677980] x20: ffff8000830fdeb8 x19: ffff00000cde83c0 x18: 0000000000000020
+[  144.685098] x17: 2e7465676461672f x16: 0000000000000015 x15: 65723d315f454c42
+[  144.692216] x14: 000000000000000a x13: 0000000000000000 x12: 0000000000000000
+[  144.699334] x11: 0000000000000000 x10: ffff800081838810 x9 : 0000000000000000
+[  144.706452] x8 : 0101010101010101 x7 : 7f7f7f7f7f7f7f7f x6 : ffff00000c86c000
+[  144.713569] x5 : 000000000000003c x4 : ffff8000839fba80 x3 : ffff00000b7ac800
+[  144.720687] x2 : ffff00000c86c000 x1 : 0000000000000001 x0 : ffff00000cde83c0
+[  144.727806] Call trace:
+[  144.730244]  _regulator_put.part.0+0x40/0x48 (P)
+[  144.734850]  regulator_put+0x38/0x50
+[  144.738414]  devm_regulator_release+0x14/0x20
+[  144.742764]  dr_node_release+0x1c/0x28
+[  144.746513]  devres_release_all+0xa0/0x108
+[  144.750598]  device_unbind_cleanup+0x2c/0x84
+[  144.754857]  device_release_driver_internal+0x1e8/0x224
+[  144.760067]  device_links_unbind_consumers+0xd4/0xfc
+[  144.765016]  device_release_driver_internal+0xe0/0x224
+[  144.770139]  device_driver_detach+0x18/0x24
+[  144.774311]  unbind_store+0xb4/0xb8
+[  144.777791]  drv_attr_store+0x24/0x38
+[  144.781443]  sysfs_kf_write+0x7c/0x94
+[  144.785102]  kernfs_fop_write_iter+0x128/0x1b8
+[  144.789534]  vfs_write+0x2ac/0x350
+[  144.792932]  ksys_write+0x68/0xfc
+[  144.796239]  __arm64_sys_write+0x1c/0x28
+[  144.800152]  invoke_syscall+0x54/0x110
+[  144.803898]  el0_svc_common.constprop.0+0xc0/0xe0
+[  144.808590]  do_el0_svc+0x1c/0x28
+[  144.811898]  el0_svc+0x30/0x198
+[  144.815039]  el0t_64_sync_handler+0xa0/0xe4
+[  144.819212]  el0t_64_sync+0x198/0x19c
+[  144.822869] ---[ end trace 0000000000000000 ]---
+[  145.142388] renesas_usbhs 11e20000.usb: host probed
+[  145.153204] renesas_usbhs 11e20000.usb: no transceiver found
+[  145.169801] renesas_usbhs 11e20000.usb: gadget probed
+[  145.184305] renesas_usbhs 11e20000.usb: probed
+[  145.257986] ------------[ cut here ]------------
+[  145.262638] WARNING: drivers/regulator/core.c:2657 at _regulator_put.part.0+0x40/0x48, CPU#0: python3/256
+[  145.272192] Modules linked in: usb_f_ecm u_ether libcomposite btusb btrtl btintel btbcm btmtk nvme nvme_core snd_soc_simple_card snd_soc_da7213 snd_soc_simple_card_utils snd_soc_core snd_compress snd_pcm_dmaengine snd_pcm snd_timer snd renesas_usbhs soundcore rzg3s_thermal clk_vbattb rzg2l_adc rtc_renesas_rtca3 industrialio_adc cfg80211 bluetooth ecdh_generic kpp ecc rfkill fuse drm backlight
+[  145.306967] CPU: 0 UID: 0 PID: 256 Comm: python3 Tainted: G        W           7.1.0-rc7-next-20260610-00001-gafe09f11d549-dirty #102 PREEMPT 
+[  145.319706] Tainted: [W]=WARN
+[  145.322663] Hardware name: Renesas SMARC EVK version 2 based on r9a08g045s33 (DT)
+[  145.330121] pstate: 80400005 (Nzcv daif +PAN -UAO -TCO -DIT -SSBS BTYPE=--)
+[  145.337059] pc : _regulator_put.part.0+0x40/0x48
+[  145.341662] lr : regulator_put+0x38/0x50
+[  145.345572] sp : ffff8000839fba90
+[  145.348873] x29: ffff8000839fba90 x28: ffff00000c86c000 x27: 0000000000000000
+[  145.355993] x26: 0000000000000000 x25: 0000000000000000 x24: ffff00000b606810
+[  145.363111] x23: 0000000000000013 x22: ffff8000839fbb38 x21: ffff00000b606810
+[  145.370229] x20: ffff8000830fdeb8 x19: ffff00000c894e40 x18: 0000000000000020
+[  145.377346] x17: 2e7465676461672f x16: 0000000000000000 x15: 65723d315f454c42
+[  145.384464] x14: 0000000000000034 x13: 0000000000000000 x12: 0000000000000000
+[  145.391582] x11: 0000000000000000 x10: ffff800081838810 x9 : 0000000000000000
+[  145.398699] x8 : 0101010101010101 x7 : 7f7f7f7f7f7f7f7f x6 : ffff00000c86c000
+[  145.405816] x5 : 000000000000003c x4 : ffff8000839fba80 x3 : ffff00000b7ac800
+[  145.412934] x2 : ffff00000c86c000 x1 : 0000000000000001 x0 : ffff00000c894e40
+[  145.420052] Call trace:
+[  145.422491]  _regulator_put.part.0+0x40/0x48 (P)
+[  145.427097]  regulator_put+0x38/0x50
+[  145.430661]  devm_regulator_release+0x14/0x20
+[  145.435011]  dr_node_release+0x1c/0x28
+[  145.438760]  devres_release_all+0xa0/0x108
+[  145.442845]  device_unbind_cleanup+0x2c/0x84
+[  145.447103]  device_release_driver_internal+0x1e8/0x224
+[  145.452313]  device_links_unbind_consumers+0xd4/0xfc
+[  145.457262]  device_release_driver_internal+0xe0/0x224
+[  145.462385]  device_driver_detach+0x18/0x24
+[  145.466557]  unbind_store+0xb4/0xb8
+[  145.470036]  drv_attr_store+0x24/0x38
+[  145.473688]  sysfs_kf_write+0x7c/0x94
+[  145.477347]  kernfs_fop_write_iter+0x128/0x1b8
+[  145.481779]  vfs_write+0x2ac/0x350
+[  145.485176]  ksys_write+0x68/0xfc
+[  145.488483]  __arm64_sys_write+0x1c/0x28
+[  145.492396]  invoke_syscall+0x54/0x110
+[  145.496141]  el0_svc_common.constprop.0+0xc0/0xe0
+[  145.500834]  do_el0_svc+0x1c/0x28
+[  145.504142]  el0_svc+0x30/0x198
+[  145.507283]  el0t_64_sync_handler+0xa0/0xe4
+[  145.511457]  el0t_64_sync+0x198/0x19c
+[  145.515112] ---[ end trace 0000000000000000 ]---
+[  147.500515] renesas_usbhs 11e20000.usb: host probed
+[  147.512075] renesas_usbhs 11e20000.usb: no transceiver found
+[  147.531153] renesas_usbhs 11e20000.usb: gadget probed
+[  147.541800] renesas_usbhs 11e20000.usb: probed
+[  147.621861] ------------[ cut here ]------------
+[  147.626514] WARNING: drivers/regulator/core.c:2657 at _regulator_put.part.0+0x40/0x48, CPU#0: python3/256
+[  147.636069] Modules linked in: usb_f_ecm u_ether libcomposite btusb btrtl btintel btbcm btmtk nvme nvme_core snd_soc_simple_card snd_soc_da7213 snd_soc_simple_card_utils snd_soc_core snd_compress snd_pcm_dmaengine snd_pcm snd_timer snd renesas_usbhs soundcore rzg3s_thermal clk_vbattb rzg2l_adc rtc_renesas_rtca3 industrialio_adc cfg80211 bluetooth ecdh_generic kpp ecc rfkill fuse drm backlight
+[  147.670844] CPU: 0 UID: 0 PID: 256 Comm: python3 Tainted: G        W           7.1.0-rc7-next-20260610-00001-gafe09f11d549-dirty #102 PREEMPT 
+[  147.683581] Tainted: [W]=WARN
+[  147.686537] Hardware name: Renesas SMARC EVK version 2 based on r9a08g045s33 (DT)
+[  147.693992] pstate: 80400005 (Nzcv daif +PAN -UAO -TCO -DIT -SSBS BTYPE=--)
+[  147.700930] pc : _regulator_put.part.0+0x40/0x48
+[  147.705532] lr : regulator_put+0x38/0x50
+[  147.709442] sp : ffff8000839fba90
+[  147.712743] x29: ffff8000839fba90 x28: ffff00000c86c000 x27: 0000000000000000
+[  147.719863] x26: 0000000000000000 x25: 0000000000000000 x24: ffff00000b606810
+[  147.726981] x23: 0000000000000013 x22: ffff8000839fbb38 x21: ffff00000b606810
+[  147.734100] x20: ffff8000830fdeb8 x19: ffff00000e1590c0 x18: 0000000000000020
+[  147.741218] x17: 2e7465676461672f x16: 0000000000000007 x15: 65723d315f454c42
+[  147.748335] x14: 0000000000000010 x13: 0000000000000000 x12: 0000000000000000
+[  147.755453] x11: 0000000000000000 x10: ffff800081838810 x9 : 0000000000000000
+[  147.762571] x8 : 0101010101010101 x7 : 7f7f7f7f7f7f7f7f x6 : ffff00000c86c000
+[  147.769688] x5 : 000000000000003c x4 : ffff8000839fba80 x3 : ffff00000b7ac800
+[  147.776806] x2 : ffff00000c86c000 x1 : 0000000000000001 x0 : ffff00000e1590c0
+[  147.783925] Call trace:
+[  147.786363]  _regulator_put.part.0+0x40/0x48 (P)
+[  147.790969]  regulator_put+0x38/0x50
+[  147.794533]  devm_regulator_release+0x14/0x20
+[  147.798883]  dr_node_release+0x1c/0x28
+[  147.802632]  devres_release_all+0xa0/0x108
+[  147.806716]  device_unbind_cleanup+0x2c/0x84
+[  147.810975]  device_release_driver_internal+0x1e8/0x224
+[  147.816186]  device_links_unbind_consumers+0xd4/0xfc
+[  147.821136]  device_release_driver_internal+0xe0/0x224
+[  147.826259]  device_driver_detach+0x18/0x24
+[  147.830431]  unbind_store+0xb4/0xb8
+[  147.833910]  drv_attr_store+0x24/0x38
+[  147.837562]  sysfs_kf_write+0x7c/0x94
+[  147.841221]  kernfs_fop_write_iter+0x128/0x1b8
+[  147.845652]  vfs_write+0x2ac/0x350
+[  147.849050]  ksys_write+0x68/0xfc
+[  147.852357]  __arm64_sys_write+0x1c/0x28
+[  147.856270]  invoke_syscall+0x54/0x110
+[  147.860017]  el0_svc_common.constprop.0+0xc0/0xe0
+[  147.864710]  do_el0_svc+0x1c/0x28
+[  147.868020]  el0_svc+0x30/0x198
+[  147.871161]  el0t_64_sync_handler+0xa0/0xe4
+[  147.875334]  el0t_64_sync+0x198/0x19c
+[  147.878989] ---[ end trace 0000000000000000 ]---
+[  149.330426] renesas_usbhs 11e20000.usb: host probed
+[  149.343026] renesas_usbhs 11e20000.usb: no transceiver found
+[  149.359910] renesas_usbhs 11e20000.usb: gadget probed
+[  149.373818] renesas_usbhs 11e20000.usb: probed
+[  149.448059] ------------[ cut here ]------------
+[  149.452711] WARNING: drivers/regulator/core.c:2657 at _regulator_put.part.0+0x40/0x48, CPU#0: python3/256
+[  149.462265] Modules linked in: usb_f_ecm u_ether libcomposite btusb btrtl btintel btbcm btmtk nvme nvme_core snd_soc_simple_card snd_soc_da7213 snd_soc_simple_card_utils snd_soc_core snd_compress snd_pcm_dmaengine snd_pcm snd_timer snd renesas_usbhs soundcore rzg3s_thermal clk_vbattb rzg2l_adc rtc_renesas_rtca3 industrialio_adc cfg80211 bluetooth ecdh_generic kpp ecc rfkill fuse drm backlight
+[  149.497041] CPU: 0 UID: 0 PID: 256 Comm: python3 Tainted: G        W           7.1.0-rc7-next-20260610-00001-gafe09f11d549-dirty #102 PREEMPT 
+[  149.509779] Tainted: [W]=WARN
+[  149.512735] Hardware name: Renesas SMARC EVK version 2 based on r9a08g045s33 (DT)
+[  149.520191] pstate: 80400005 (Nzcv daif +PAN -UAO -TCO -DIT -SSBS BTYPE=--)
+[  149.527129] pc : _regulator_put.part.0+0x40/0x48
+[  149.531733] lr : regulator_put+0x38/0x50
+[  149.535643] sp : ffff8000839fba90
+[  149.538943] x29: ffff8000839fba90 x28: ffff00000c86c000 x27: 0000000000000000
+[  149.546063] x26: 0000000000000000 x25: 0000000000000000 x24: ffff00000b606810
+[  149.553181] x23: 0000000000000013 x22: ffff8000839fbb38 x21: ffff00000b606810
+[  149.560299] x20: ffff8000830fdeb8 x19: ffff00000c8946c0 x18: 0000000000000020
+[  149.567418] x17: 2e7465676461672f x16: 0000000000000015 x15: 65723d315f454c42
+[  149.574535] x14: 0000000000000012 x13: 0000000000000000 x12: 0000000000000000
+[  149.581653] x11: 0000000000000000 x10: ffff800081838810 x9 : 0000000000000000
+[  149.588770] x8 : 0101010101010101 x7 : 7f7f7f7f7f7f7f7f x6 : ffff00000c86c000
+[  149.595888] x5 : 000000000000003c x4 : ffff8000839fba80 x3 : ffff00000b7ac800
+[  149.603006] x2 : ffff00000c86c000 x1 : 0000000000000001 x0 : ffff00000c8946c0
+[  149.610124] Call trace:
+[  149.612563]  _regulator_put.part.0+0x40/0x48 (P)
+[  149.617169]  regulator_put+0x38/0x50
+[  149.620734]  devm_regulator_release+0x14/0x20
+[  149.625084]  dr_node_release+0x1c/0x28
+[  149.628832]  devres_release_all+0xa0/0x108
+[  149.632917]  device_unbind_cleanup+0x2c/0x84
+[  149.637176]  device_release_driver_internal+0x1e8/0x224
+[  149.642386]  device_links_unbind_consumers+0xd4/0xfc
+[  149.647335]  device_release_driver_internal+0xe0/0x224
+[  149.652458]  device_driver_detach+0x18/0x24
+[  149.656630]  unbind_store+0xb4/0xb8
+[  149.660110]  drv_attr_store+0x24/0x38
+[  149.663762]  sysfs_kf_write+0x7c/0x94
+[  149.667420]  kernfs_fop_write_iter+0x128/0x1b8
+[  149.671851]  vfs_write+0x2ac/0x350
+[  149.675249]  ksys_write+0x68/0xfc
+[  149.678555]  __arm64_sys_write+0x1c/0x28
+[  149.682467]  invoke_syscall+0x54/0x110
+[  149.686213]  el0_svc_common.constprop.0+0xc0/0xe0
+[  149.690908]  do_el0_svc+0x1c/0x28
+[  149.694216]  el0_svc+0x30/0x198
+[  149.697356]  el0t_64_sync_handler+0xa0/0xe4
+[  149.701530]  el0t_64_sync+0x198/0x19c
+[  149.705185] ---[ end trace 0000000000000000 ]---
+[  150.994787] renesas_usbhs 11e20000.usb: host probed
+[  151.005887] renesas_usbhs 11e20000.usb: no transceiver found
+[  151.023713] renesas_usbhs 11e20000.usb: gadget probed
+[  151.037798] renesas_usbhs 11e20000.usb: probed
+[  151.110483] ------------[ cut here ]------------
+[  151.115135] WARNING: drivers/regulator/core.c:2657 at _regulator_put.part.0+0x40/0x48, CPU#0: python3/256
+[  151.124688] Modules linked in: usb_f_ecm u_ether libcomposite btusb btrtl btintel btbcm btmtk nvme nvme_core snd_soc_simple_card snd_soc_da7213 snd_soc_simple_card_utils snd_soc_core snd_compress snd_pcm_dmaengine snd_pcm snd_timer snd renesas_usbhs soundcore rzg3s_thermal clk_vbattb rzg2l_adc rtc_renesas_rtca3 industrialio_adc cfg80211 bluetooth ecdh_generic kpp ecc rfkill fuse drm backlight
+[  151.159463] CPU: 0 UID: 0 PID: 256 Comm: python3 Tainted: G        W           7.1.0-rc7-next-20260610-00001-gafe09f11d549-dirty #102 PREEMPT 
+[  151.172200] Tainted: [W]=WARN
+[  151.175156] Hardware name: Renesas SMARC EVK version 2 based on r9a08g045s33 (DT)
+[  151.182611] pstate: 80400005 (Nzcv daif +PAN -UAO -TCO -DIT -SSBS BTYPE=--)
+[  151.189550] pc : _regulator_put.part.0+0x40/0x48
+[  151.194152] lr : regulator_put+0x38/0x50
+[  151.198062] sp : ffff8000839fba90
+[  151.201363] x29: ffff8000839fba90 x28: ffff00000c86c000 x27: 0000000000000000
+[  151.208483] x26: 0000000000000000 x25: 0000000000000000 x24: ffff00000b606810
+[  151.215601] x23: 0000000000000013 x22: ffff8000839fbb38 x21: ffff00000b606810
+[  151.222719] x20: ffff8000830fdeb8 x19: ffff00000c894900 x18: 0000000000000020
+[  151.229837] x17: 2e7465676461672f x16: 000000000000001e x15: 65723d315f454c42
+[  151.236956] x14: 0000000000000001 x13: 0000000000000000 x12: 0000000000000000
+[  151.244073] x11: 0000000000000000 x10: ffff800081838810 x9 : 0000000000000000
+[  151.251191] x8 : 0101010101010101 x7 : 7f7f7f7f7f7f7f7f x6 : ffff00000c86c000
+[  151.258308] x5 : 000000000000003c x4 : ffff8000839fba80 x3 : ffff00000b7ac800
+[  151.265425] x2 : ffff00000c86c000 x1 : 0000000000000001 x0 : ffff00000c894900
+[  151.272544] Call trace:
+[  151.274982]  _regulator_put.part.0+0x40/0x48 (P)
+[  151.279588]  regulator_put+0x38/0x50
+[  151.283153]  devm_regulator_release+0x14/0x20
+[  151.287503]  dr_node_release+0x1c/0x28
+[  151.291252]  devres_release_all+0xa0/0x108
+[  151.295337]  device_unbind_cleanup+0x2c/0x84
+[  151.299595]  device_release_driver_internal+0x1e8/0x224
+[  151.304806]  device_links_unbind_consumers+0xd4/0xfc
+[  151.309755]  device_release_driver_internal+0xe0/0x224
+[  151.314878]  device_driver_detach+0x18/0x24
+[  151.319050]  unbind_store+0xb4/0xb8
+[  151.322530]  drv_attr_store+0x24/0x38
+[  151.326182]  sysfs_kf_write+0x7c/0x94
+[  151.329840]  kernfs_fop_write_iter+0x128/0x1b8
+[  151.334272]  vfs_write+0x2ac/0x350
+[  151.337670]  ksys_write+0x68/0xfc
+[  151.340978]  __arm64_sys_write+0x1c/0x28
+[  151.344891]  invoke_syscall+0x54/0x110
+[  151.348637]  el0_svc_common.constprop.0+0xc0/0xe0
+[  151.353330]  do_el0_svc+0x1c/0x28
+[  151.356638]  el0_svc+0x30/0x198
+[  151.359779]  el0t_64_sync_handler+0xa0/0xe4
+[  151.363952]  el0t_64_sync+0x198/0x19c
+[  151.367607] ---[ end trace 0000000000000000 ]---
+[  153.249791] renesas_usbhs 11e20000.usb: host probed
+[  153.260213] renesas_usbhs 11e20000.usb: no transceiver found
+[  153.281450] renesas_usbhs 11e20000.usb: gadget probed
+[  153.290912] renesas_usbhs 11e20000.usb: probed
+[  153.364989] ------------[ cut here ]------------
+[  153.369643] WARNING: drivers/regulator/core.c:2657 at _regulator_put.part.0+0x40/0x48, CPU#0: python3/256
+[  153.379197] Modules linked in: usb_f_ecm u_ether libcomposite btusb btrtl btintel btbcm btmtk nvme nvme_core snd_soc_simple_card snd_soc_da7213 snd_soc_simple_card_utils snd_soc_core snd_compress snd_pcm_dmaengine snd_pcm snd_timer snd renesas_usbhs soundcore rzg3s_thermal clk_vbattb rzg2l_adc rtc_renesas_rtca3 industrialio_adc cfg80211 bluetooth ecdh_generic kpp ecc rfkill fuse drm backlight
+[  153.413976] CPU: 0 UID: 0 PID: 256 Comm: python3 Tainted: G        W           7.1.0-rc7-next-20260610-00001-gafe09f11d549-dirty #102 PREEMPT 
+[  153.426713] Tainted: [W]=WARN
+[  153.429669] Hardware name: Renesas SMARC EVK version 2 based on r9a08g045s33 (DT)
+[  153.437125] pstate: 80400005 (Nzcv daif +PAN -UAO -TCO -DIT -SSBS BTYPE=--)
+[  153.444063] pc : _regulator_put.part.0+0x40/0x48
+[  153.448666] lr : regulator_put+0x38/0x50
+[  153.452576] sp : ffff8000839fba90
+[  153.455877] x29: ffff8000839fba90 x28: ffff00000c86c000 x27: 0000000000000000
+[  153.462996] x26: 0000000000000000 x25: 0000000000000000 x24: ffff00000b606810
+[  153.470115] x23: 0000000000000013 x22: ffff8000839fbb38 x21: ffff00000b606810
+[  153.477233] x20: ffff8000830fdeb8 x19: ffff000010f9db40 x18: 0000000000000020
+[  153.484351] x17: 2e7465676461672f x16: 0000000000000018 x15: 65723d315f454c42
+[  153.491469] x14: 0000000000000039 x13: 0000000000000000 x12: 0000000000000000
+[  153.498586] x11: 0000000000000000 x10: ffff800081838810 x9 : 0000000000000000
+[  153.505704] x8 : 0101010101010101 x7 : 7f7f7f7f7f7f7f7f x6 : ffff00000c86c000
+[  153.512822] x5 : 000000000000003c x4 : ffff8000839fba80 x3 : ffff00000b7ac800
+[  153.519939] x2 : ffff00000c86c000 x1 : 0000000000000001 x0 : ffff000010f9db40
+[  153.527057] Call trace:
+[  153.529495]  _regulator_put.part.0+0x40/0x48 (P)
+[  153.534102]  regulator_put+0x38/0x50
+[  153.537667]  devm_regulator_release+0x14/0x20
+[  153.542017]  dr_node_release+0x1c/0x28
+[  153.545766]  devres_release_all+0xa0/0x108
+[  153.549851]  device_unbind_cleanup+0x2c/0x84
+[  153.554111]  device_release_driver_internal+0x1e8/0x224
+[  153.559321]  device_links_unbind_consumers+0xd4/0xfc
+[  153.564270]  device_release_driver_internal+0xe0/0x224
+[  153.569394]  device_driver_detach+0x18/0x24
+[  153.573566]  unbind_store+0xb4/0xb8
+[  153.577046]  drv_attr_store+0x24/0x38
+[  153.580697]  sysfs_kf_write+0x7c/0x94
+[  153.584356]  kernfs_fop_write_iter+0x128/0x1b8
+[  153.588788]  vfs_write+0x2ac/0x350
+[  153.592185]  ksys_write+0x68/0xfc
+[  153.595493]  __arm64_sys_write+0x1c/0x28
+[  153.599406]  invoke_syscall+0x54/0x110
+[  153.603154]  el0_svc_common.constprop.0+0xc0/0xe0
+[  153.607846]  do_el0_svc+0x1c/0x28
+[  153.611154]  el0_svc+0x30/0x198
+[  153.614294]  el0t_64_sync_handler+0xa0/0xe4
+[  153.618468]  el0t_64_sync+0x198/0x19c
+[  153.622125] ---[ end trace 0000000000000000 ]---
+[  154.079946] renesas_usbhs 11e20000.usb: host probed
+[  154.093210] renesas_usbhs 11e20000.usb: no transceiver found
+[  154.109581] renesas_usbhs 11e20000.usb: gadget probed
+[  154.124873] renesas_usbhs 11e20000.usb: probed
+[  154.194354] ------------[ cut here ]------------
+[  154.199010] WARNING: drivers/regulator/core.c:2657 at _regulator_put.part.0+0x40/0x48, CPU#0: python3/256
+[  154.208564] Modules linked in: usb_f_ecm u_ether libcomposite btusb btrtl btintel btbcm btmtk nvme nvme_core snd_soc_simple_card snd_soc_da7213 snd_soc_simple_card_utils snd_soc_core snd_compress snd_pcm_dmaengine snd_pcm snd_timer snd renesas_usbhs soundcore rzg3s_thermal clk_vbattb rzg2l_adc rtc_renesas_rtca3 industrialio_adc cfg80211 bluetooth ecdh_generic kpp ecc rfkill fuse drm backlight
+[  154.243339] CPU: 0 UID: 0 PID: 256 Comm: python3 Tainted: G        W           7.1.0-rc7-next-20260610-00001-gafe09f11d549-dirty #102 PREEMPT 
+[  154.256076] Tainted: [W]=WARN
+[  154.259032] Hardware name: Renesas SMARC EVK version 2 based on r9a08g045s33 (DT)
+[  154.266488] pstate: 80400005 (Nzcv daif +PAN -UAO -TCO -DIT -SSBS BTYPE=--)
+[  154.273426] pc : _regulator_put.part.0+0x40/0x48
+[  154.278029] lr : regulator_put+0x38/0x50
+[  154.281939] sp : ffff8000839fba90
+[  154.285240] x29: ffff8000839fba90 x28: ffff00000c86c000 x27: 0000000000000000
+[  154.292359] x26: 0000000000000000 x25: 0000000000000000 x24: ffff00000b606810
+[  154.299477] x23: 0000000000000013 x22: ffff8000839fbb38 x21: ffff00000b606810
+[  154.306595] x20: ffff8000830fdeb8 x19: ffff000010f9dd80 x18: 0000000000000020
+[  154.313713] x17: 2e7465676461672f x16: 0000000000000004 x15: 65723d315f454c42
+[  154.320831] x14: 0000000000000025 x13: 0000000000000000 x12: 0000000000000000
+[  154.327948] x11: 0000000000000000 x10: ffff800081838810 x9 : 0000000000000000
+[  154.335065] x8 : 0101010101010101 x7 : 7f7f7f7f7f7f7f7f x6 : ffff00000c86c000
+[  154.342183] x5 : 000000000000003c x4 : ffff8000839fba80 x3 : ffff00000b7ac800
+[  154.349300] x2 : ffff00000c86c000 x1 : 0000000000000001 x0 : ffff000010f9dd80
+[  154.356419] Call trace:
+[  154.358857]  _regulator_put.part.0+0x40/0x48 (P)
+[  154.363464]  regulator_put+0x38/0x50
+[  154.367029]  devm_regulator_release+0x14/0x20
+[  154.371378]  dr_node_release+0x1c/0x28
+[  154.375127]  devres_release_all+0xa0/0x108
+[  154.379212]  device_unbind_cleanup+0x2c/0x84
+[  154.383471]  device_release_driver_internal+0x1e8/0x224
+[  154.388681]  device_links_unbind_consumers+0xd4/0xfc
+[  154.393631]  device_release_driver_internal+0xe0/0x224
+[  154.398754]  device_driver_detach+0x18/0x24
+[  154.402926]  unbind_store+0xb4/0xb8
+[  154.406406]  drv_attr_store+0x24/0x38
+[  154.410057]  sysfs_kf_write+0x7c/0x94
+[  154.413716]  kernfs_fop_write_iter+0x128/0x1b8
+[  154.418148]  vfs_write+0x2ac/0x350
+[  154.421546]  ksys_write+0x68/0xfc
+[  154.424853]  __arm64_sys_write+0x1c/0x28
+[  154.428766]  invoke_syscall+0x54/0x110
+[  154.432512]  el0_svc_common.constprop.0+0xc0/0xe0
+[  154.437205]  do_el0_svc+0x1c/0x28
+[  154.440513]  el0_svc+0x30/0x198
+[  154.443653]  el0t_64_sync_handler+0xa0/0xe4
+[  154.447827]  el0t_64_sync+0x198/0x19c
+[  154.451483] ---[ end trace 0000000000000000 ]---
+[  155.211273] renesas_usbhs 11e20000.usb: host probed
+[  155.224381] renesas_usbhs 11e20000.usb: no transceiver found
+[  155.241458] renesas_usbhs 11e20000.usb: gadget probed
+[  155.252728] renesas_usbhs 11e20000.usb: probed
+[  155.321959] ------------[ cut here ]------------
+[  155.326614] WARNING: drivers/regulator/core.c:2657 at _regulator_put.part.0+0x40/0x48, CPU#0: python3/256
+[  155.336169] Modules linked in: usb_f_ecm u_ether libcomposite btusb btrtl btintel btbcm btmtk nvme nvme_core snd_soc_simple_card snd_soc_da7213 snd_soc_simple_card_utils snd_soc_core snd_compress snd_pcm_dmaengine snd_pcm snd_timer snd renesas_usbhs soundcore rzg3s_thermal clk_vbattb rzg2l_adc rtc_renesas_rtca3 industrialio_adc cfg80211 bluetooth ecdh_generic kpp ecc rfkill fuse drm backlight
+[  155.370945] CPU: 0 UID: 0 PID: 256 Comm: python3 Tainted: G        W           7.1.0-rc7-next-20260610-00001-gafe09f11d549-dirty #102 PREEMPT 
+[  155.383683] Tainted: [W]=WARN
+[  155.386639] Hardware name: Renesas SMARC EVK version 2 based on r9a08g045s33 (DT)
+[  155.394095] pstate: 80400005 (Nzcv daif +PAN -UAO -TCO -DIT -SSBS BTYPE=--)
+[  155.401033] pc : _regulator_put.part.0+0x40/0x48
+[  155.405636] lr : regulator_put+0x38/0x50
+[  155.409546] sp : ffff8000839fba90
+[  155.412847] x29: ffff8000839fba90 x28: ffff00000c86c000 x27: 0000000000000000
+[  155.419966] x26: 0000000000000000 x25: 0000000000000000 x24: ffff00000b606810
+[  155.427084] x23: 0000000000000013 x22: ffff8000839fbb38 x21: ffff00000b606810
+[  155.434202] x20: ffff8000830fdeb8 x19: ffff00000de0d0c0 x18: 0000000000000020
+[  155.441320] x17: 0000000000000000 x16: 0000000000000000 x15: 65723d315f454c42
+[  155.448437] x14: 0000000000000000 x13: 0000000000000000 x12: 0000000000000000
+[  155.455554] x11: 0000000000000000 x10: ffff800081838810 x9 : 0000000000000000
+[  155.462671] x8 : 0101010101010101 x7 : 7f7f7f7f7f7f7f7f x6 : ffff00000c86c000
+[  155.469789] x5 : 000000000000003c x4 : ffff8000839fba80 x3 : ffff00000b7ac800
+[  155.476906] x2 : ffff00000c86c000 x1 : 0000000000000001 x0 : ffff00000de0d0c0
+[  155.484025] Call trace:
+[  155.486463]  _regulator_put.part.0+0x40/0x48 (P)
+[  155.491069]  regulator_put+0x38/0x50
+[  155.494633]  devm_regulator_release+0x14/0x20
+[  155.498983]  dr_node_release+0x1c/0x28
+[  155.502731]  devres_release_all+0xa0/0x108
+[  155.506815]  device_unbind_cleanup+0x2c/0x84
+[  155.511073]  device_release_driver_internal+0x1e8/0x224
+[  155.516284]  device_links_unbind_consumers+0xd4/0xfc
+[  155.521234]  device_release_driver_internal+0xe0/0x224
+[  155.526357]  device_driver_detach+0x18/0x24
+[  155.530529]  unbind_store+0xb4/0xb8
+[  155.534008]  drv_attr_store+0x24/0x38
+[  155.537659]  sysfs_kf_write+0x7c/0x94
+[  155.541318]  kernfs_fop_write_iter+0x128/0x1b8
+[  155.545750]  vfs_write+0x2ac/0x350
+[  155.549148]  ksys_write+0x68/0xfc
+[  155.552456]  __arm64_sys_write+0x1c/0x28
+[  155.556369]  invoke_syscall+0x54/0x110
+[  155.560114]  el0_svc_common.constprop.0+0xc0/0xe0
+[  155.564807]  do_el0_svc+0x1c/0x28
+[  155.568115]  el0_svc+0x30/0x198
+[  155.571256]  el0t_64_sync_handler+0xa0/0xe4
+[  155.575429]  el0t_64_sync+0x198/0x19c
+[  155.579085] ---[ end trace 0000000000000000 ]---
+[  156.003772] renesas_usbhs 11e20000.usb: host probed
+[  156.016126] renesas_usbhs 11e20000.usb: no transceiver found
+[  156.034184] renesas_usbhs 11e20000.usb: gadget probed
+[  156.047586] renesas_usbhs 11e20000.usb: probed
+INFO     test_usb:test_usb.py:517 Unbind/bind the device 11e10000.usb from driver ohci-platform for 300 time(s)
+[  156.132940] ohci-platform 11e30000.usb: Generic Platform OHCI controller
+[  156.152768] ehci-platform 11e30100.usb: EHCI Host Controller
+[  156.175915] ohci-platform 11e30000.usb: new USB bus registered, assigned bus number 1
+[  156.185483] ehci-platform 11e10100.usb: EHCI Host Controller
+[  156.197311] ehci-platform 11e30100.usb: new USB bus registered, assigned bus number 2
+[  156.217427] ohci-platform 11e30000.usb: irq 65, io mem 0x11e30000
+[  156.223654] ehci-platform 11e10100.usb: new USB bus registered, assigned bus number 3
+[  156.231744] ohci-platform 11e10000.usb: Generic Platform OHCI controller
+[  156.241313] ehci-platform 11e30100.usb: irq 63, io mem 0x11e30100
+[  156.257231] ohci-platform 11e10000.usb: new USB bus registered, assigned bus number 4
+[  156.266585] ehci-platform 11e10100.usb: irq 62, io mem 0x11e10100
+[  156.285194] ehci-platform 11e30100.usb: USB 2.0 started, EHCI 1.10
+[  156.294074] ohci-platform 11e10000.usb: irq 64, io mem 0x11e10000
+[  156.305166] ehci-platform 11e10100.usb: USB 2.0 started, EHCI 1.10
+[  156.317312] hub 2-0:1.0: USB hub found
+[  156.331660] hub 2-0:1.0: 1 port detected
+[  156.354353] hub 3-0:1.0: USB hub found
+[  156.366507] hub 3-0:1.0: 1 port detected
+[  156.426265] hub 1-0:1.0: USB hub found
+[  156.437204] hub 1-0:1.0: 1 port detected
+[  156.473576] hub 4-0:1.0: USB hub found
+[  156.482600] hub 4-0:1.0: 1 port detected
+[  156.501764] ohci-platform 11e10000.usb: remove, state 1
+[  156.513240] usb usb4: USB disconnect, device number 1
+[  156.529855] ohci-platform 11e10000.usb: USB bus 4 deregistered
